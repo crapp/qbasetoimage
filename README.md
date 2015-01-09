@@ -1,15 +1,15 @@
-=QBaseToImage=
+=QBaseToImage
 
 This is an application build with the Qt framework to generate images from base64
 encoded data.
 
-== Installation ==
+==Installation
 
 Use Qt-Creater to build the application
 
-== License ==
+==License
 
-Copyright 2012-2015 Christian Rapp 0x2a@posteo.org
+Copyright (C) 2012-2015 Christian Rapp 
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
