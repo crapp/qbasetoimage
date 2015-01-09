@@ -1,6 +1,6 @@
 #QBaseToImage#
 
-This is an application build with the Qt framework to generate images from base64
+This is an application, build with the Qt framework, to generate images from base64
 encoded data.
 
 ##Installation##
