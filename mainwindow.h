@@ -22,7 +22,9 @@
 #include <QByteArray>
 
 #include "previewdialog.h"
-
+#include "qticon.h"
+#include "filesaveoperation.h"
+#include "createimage.h"
 
 namespace Ui {
 class MainWindow;
@@ -37,21 +39,27 @@ public:
     ~MainWindow();
 
 public slots:
-    void getSaveFile();
-    void base64Decode();
-    void outFileChanged(const QString &);
+
     
 private:
     Ui::MainWindow *ui;
+
     QString outFile;
     std::shared_ptr<QImage> img;
 
     std::unique_ptr<PreviewDialog> prevDialog;
+    std::unique_ptr<FileSaveOperation> fso;
+    std::unique_ptr<CreateImage> cimage;
 
 private slots:
-
+    void getSaveFile();
+    void saveFileToDisk();
+    void fileSaved(bool status);
+    void outFileChanged(const QString &);
     void generateImage();
+    void imageReady(bool status);
     void openPreviewDialog();
+
 
 };
 

@@ -22,6 +22,14 @@ PreviewDialog::PreviewDialog(std::shared_ptr<QImage> img, QWidget *parent) :
 {
     ui->setupUi(this);
 
+    this->setWindowTitle("Image Preview");
+
+    // non resizeable window
+    this->setFixedSize(this->size());
+
+    // FIXME: Label has a fixed size currently, otherwise it would not expand to
+    //        maximum possible size. One should look into this.
+
     if (this->img->width() > ui->PreviewLabel->width() ||
             this->img->height() > ui->PreviewLabel->height())
     {

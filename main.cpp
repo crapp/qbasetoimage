@@ -14,7 +14,6 @@
 
 #include <QApplication>
 #include "mainwindow.h"
-#include <iostream>
 
 using namespace std;
 

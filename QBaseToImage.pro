@@ -16,10 +16,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    previewdialog.cpp
+    previewdialog.cpp \
+    filesaveoperation.cpp \
+    createimage.cpp
 
 HEADERS  += mainwindow.h \
-    previewdialog.h
+    previewdialog.h \
+    qticon.h \
+    filesaveoperation.h \
+    createimage.h
 
 FORMS    += mainwindow.ui \
     previewdialog.ui
