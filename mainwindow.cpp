@@ -31,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->plainTextEdit->setFocus();
 
+    // connect needed "static" signals
     connect(ui->selectFileButton, SIGNAL(clicked()), this, SLOT(getSaveFile()));
     connect(ui->saveButton, SIGNAL(clicked()), this, SLOT(saveFileToDisk()));
     connect(ui->previewButton, SIGNAL(clicked()), this, SLOT(openPreviewDialog()));
